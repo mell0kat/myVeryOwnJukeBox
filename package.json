@@ -1,16 +1,25 @@
 {
-  "name": "jukeboc",
+  "name": "jukebox",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An extension of Fullstack Juke Workshop",
+  "main": "server/start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch server -e js,html server/start.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.3.26",
     "bluebird": "^3.1.1",
+    "body-parser": "^1.14.2",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
     "mongoose": "^4.3.4",
+    "mongoose-deep-populate": "^2.0.3",
+    "morgan": "^1.6.1",
+    "nodemon": "^1.8.1",
     "path": "^0.12.7"
   }
 }
